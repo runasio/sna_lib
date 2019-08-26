@@ -3,16 +3,13 @@ defmodule SnaLib do
   Documentation for SnaLib.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> SnaLib.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def new() do
+    %{
+      ref: :erlang.make_ref(),
+      data: %SnaLib.Data{},
+      meta: %SnaLib.Meta{},
+      rule: %SnaLib.Rule{},
+      cred: %SnaLib.Credential{}
+    }
   end
 end
