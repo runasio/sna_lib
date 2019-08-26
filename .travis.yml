@@ -3,7 +3,6 @@ language: elixir
 dist: bionic
 
 elixir:
-  - 1.6
   - 1.7
   - 1.8
 
@@ -19,8 +18,8 @@ notifications:
   irc:
     channels:
       - "chat.freenode.net#runas"
-    on_success: change # default: always
-    on_failure: always # default: always
+    on_success: change
+    on_failure: always
     use_notice: true
 
 email: false
